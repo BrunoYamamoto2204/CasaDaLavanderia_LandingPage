@@ -185,6 +185,9 @@ p {
         background-size: cover;
         color: var(--third-color);
     }
+    .fale-conosco-content {
+        flex-flow: column wrap;
+    }
 }
 
 @media (max-width: 800px) {
