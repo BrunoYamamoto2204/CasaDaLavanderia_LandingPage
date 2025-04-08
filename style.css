@@ -99,7 +99,7 @@ p {
 
 .produtos-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     min-height: 100vh;
     gap: 20px;
 }
@@ -122,14 +122,6 @@ p {
 
 .spacing {
     height: 60px;
-}
-
-.grid-titulos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-    padding-bottom: 20px;
 }
 
 .grid {
@@ -271,19 +263,31 @@ p {
     /* Vantagens-MQ */
     .grid {
         grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .vantagens-content h3 {
+        text-align: center;
     }
 
     /* Produtos-MQ */ 
     .produtos-content {
         grid-template-columns: 1fr;
     }
-    div.img-produtos {
-        padding-left: 0px;
-        gap: 20px;
-        margin-left: 0px;
+
+    .img-produtos2 {
+        max-width: 90%;
     }
-    div.img-produtos .foto-produto {
-        margin: auto;
+
+    .img-produtos2 a img {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+
+    .img-produtos a::after, .img-produtos2 a::after {
+        text-align: left;
     }
 
     /* Fale Conosco-MQ */
