@@ -7,6 +7,7 @@
     --options-color:#E39440; 
     --default-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --bold-font: "Oswald", sans-serif;
+    --title-font: "Bungee Spice", sans-serif;
 }
 
 a {
@@ -35,7 +36,7 @@ p {
 }
 
 .home-bg {
-    background: url(img-fundos/fundo2.svg);
+    background: url(img-fundos/fundo2-pequeno.svg);
     background-size: cover;
     color: var(--third-color);
 }
@@ -50,7 +51,7 @@ p {
 
 .produtos-bg {
     /* background: linear-gradient(to bottom, #FFE600, #FEC407); */
-    background: url(img-fundos/fundo2.svg);
+    background: url(img-fundos/fundo2-editado.svg);
     background-size: cover;
 }
 
@@ -276,6 +277,12 @@ p {
         grid-template-columns: 1fr;
     }
 
+    .img-produtos{
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+        margin: auto;
+    }
+
     .img-produtos2 {
         max-width: 90%;
     }
@@ -288,6 +295,11 @@ p {
 
     .img-produtos a::after, .img-produtos2 a::after {
         text-align: left;
+    }
+
+    .produto2{
+        display: none;
+        width: 1000px;
     }
 
     /* Fale Conosco-MQ */
