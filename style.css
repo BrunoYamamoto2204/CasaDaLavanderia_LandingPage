@@ -253,6 +253,17 @@ p {
         grid-template-columns: 1fr;
     }
 
+    .home-content h2 {
+        color: var(--options-color);
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .home-content p {
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
     .home-img{
         margin: auto;
     }
@@ -267,6 +278,17 @@ p {
         text-align: center;
         max-width: 90%;
     }
+    
+    .vantagens-content h2 {
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .vantagens-content .descricao {
+        font-size: 1.3rem;
+        text-align: center;
+    }
 
     .vantagens-content h3 {
         text-align: center;
@@ -275,6 +297,15 @@ p {
     /* Produtos-MQ */ 
     .produtos-content {
         grid-template-columns: 1fr;
+    }
+
+    .produtos-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .produtos-content .descricao {
+        font-size: 1.2rem;
     }
 
     .img-produtos{

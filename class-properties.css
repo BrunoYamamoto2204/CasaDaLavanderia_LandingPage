@@ -41,7 +41,6 @@
 .main-content h2 {
     text-transform: uppercase;
     font-family: var(--bold-font);
-    font-size: 2.2rem;
 }
 
 .main-content p {
@@ -181,7 +180,7 @@
 }
 
 .img-produtos a::after, .img-produtos2 a::after{
-    content: attr(data-nome) " - " 
+    content: attr(data-nome)
     attr(data-preco); 
     font-family: var(--default-font);
     position:absolute;
