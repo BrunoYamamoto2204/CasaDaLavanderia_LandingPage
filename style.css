@@ -309,7 +309,7 @@ p {
     }
 
     .img-produtos{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr !important;
         max-width: 90%;
         margin: auto;
     }
