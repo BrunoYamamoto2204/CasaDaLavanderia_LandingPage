@@ -38,6 +38,50 @@
 }
 
 /* HOME */
+.spacing-home{
+    height: 60px;
+    width: 100%;
+    background: var(--bg-light-blue);
+}
+.home-inicio{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--bg-light-blue),white, var(--bg-light-blue));
+}
+.home-inicio p, h2, .img-home {
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+    color: var(--options-color);
+    font-size: 2.5em;
+}
+.img-home{
+    min-width: 100%;
+}
+.img-home img {
+    width: 300px;
+    padding-top: 30px;
+}
+
+.home-descricao{
+    background: linear-gradient(to bottom, var(--bg-light-blue),white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.home-descricao img {
+    max-height: 50%;
+}
+.home-descricao p{
+    max-width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+
+
+
 .main-content h2 {
     text-transform: uppercase;
     font-family: var(--bold-font);
@@ -52,43 +96,105 @@
     height: auto;
 }
 
+.home-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.home-text img {
+    margin-right: 50px;
+    width: 350px;
+}
+
 .home-text h2 {
     margin-bottom: 50px;
     transition-delay: 0.3s;
 }
 
-.home-content h2 {
-    color: var(--options-color);
-    font-size: 2.5em;
-}
-
 /* VANTAGENS */
-.vantagens-content h2 {
-    width: 100%;
-    font-size: 3rem;
-    color: var(--second-color);
+.vantagens-content h2, .vantagens-content p{
+    width: 50%;
+    text-align: center;
+}
+.vantagens-content h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.descricao-vantagem{
+    margin-bottom: 80px;
 }
 
 .vantagens-content .descricao {
     font-size: 1.5rem;
-    margin-bottom: 100px;
     width: 100%;
     color: var(--primary-color);
+    margin-bottom: 20px;
 }
 
 .vantagens-content h3 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: var(--primary-color);
 }
 
+.vantagem-block{
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.vantagem-block p{
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+}
+
+.vantagem-block i {
+    font-size: 50px; /* tamanho do ícone em si */
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--fourth-color);
+    color: white;
+    border-radius: 10%;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 30px;
+    border: 2px solid var(--third-color);
+}
+
+.vantagem-block:hover {
+    transform: translateY(-10px);
+}
+
+.vantagem-block p{
+    font-size: 1.2em;
+}
+
 /* Produtos */
+.spacing-produtos {
+    height: 10px;
+    width: 99vw;
+    margin-bottom: 30px;
+    background: var(--third-color);
+}
+
 .produtos-content h2 {
+    color: var(--second-color);
     width: 100%;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
-    font-family: "Montserrat", sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 10px;
     margin-top: 65px;
 }
@@ -101,7 +207,7 @@
     text-align: center;
     font-size: 1.5rem;
     background-color: var(--primary-color);
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     border-radius: 50px;
     padding: 10px;
@@ -125,6 +231,7 @@
 .img-produtos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
     gap: 20px;
 }
 
@@ -146,7 +253,7 @@
     margin-top: 50px;
     border-radius: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 3px solid rgba(255, 255, 255, 0.616);
+    box-shadow: 1px solid black;
 }
 
 .img-produtos a, .img-produtos2 a{
