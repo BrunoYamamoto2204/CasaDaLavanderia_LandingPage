@@ -29,6 +29,17 @@
     margin: 0;
 }
 
+.animacao{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-out;
+}
+
+.escondido{
+    opacity: 0;
+    transform: translateY(30px);
+}
+
 /* ------------------------------------ HEADER ------------------------------------ */
 
 header{
@@ -285,6 +296,17 @@ main{
     display: none;
 }
 
+.fa-circle-arrow-right,
+.fa-circle-arrow-left{
+    transition: transform 0.2s ease;
+}
+
+.fa-circle-arrow-right:hover,
+.fa-circle-arrow-left:hover{
+    transform: scale(1.2);   
+    color: var(--dark-color-font);
+}
+
 .mercado-livre-content{
     width: 100%;
     background: var(--cyan-blue-bg);
@@ -323,6 +345,14 @@ main{
     margin-bottom: 3vh;
     padding: 14px 35px;
     border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.mercado-livre-content a:hover {
+    transform: scale(1.05); 
+    color: var(--dark-blue-bg);
+    background: white;
+    box-shadow: var(--box-shadow-medio);
 }
 
 .espaco-azul{
@@ -374,6 +404,12 @@ main{
     background: var(--light-gray-bg);
     border-radius: 20px;
     box-shadow: var(--box-shadow-medio);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.sobre-nos-img:hover{
+    transform: translateY(-10px);
 }
 
 .sobre-nos-img img{
@@ -437,6 +473,7 @@ footer{
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 1.2em;
+    color: white;
 
     display: flex;
     flex-direction: column;
@@ -462,4 +499,11 @@ footer{
     font-size: 0.8em;
     text-decoration: underline;
     margin-left: 5px;
+    transition: transform 0.3s ease;
 }
+
+.github-link:hover{
+    transform: scale(1.02);   
+    color: white;
+}
+

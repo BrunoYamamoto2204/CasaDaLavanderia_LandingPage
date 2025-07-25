@@ -35,5 +35,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     );
     observer.observe(sentinela);
-    
 });
+
+// Animação das seções 
+document.addEventListener("DOMContentLoaded", function() {
+    const elementos = document.querySelectorAll(".escondido")
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry =>{
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animacao");
+                    entry.target.classList.remove("escondido");
+                }
+                else{
+                    entry.target.classList.remove("animacao");
+                    entry.target.classList.add("escondido");
+                }
+            })
+        },
+
+        {
+            root: null,
+            threshold: 0,
+        }
+    );
+
+    elementos.forEach(el => observer.observe(el));
+})
