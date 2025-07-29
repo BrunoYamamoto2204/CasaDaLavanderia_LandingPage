@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
 // Gerenciamento do header
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
-    const sentinela = document.querySelector("#sentinela-mq");
-    const sentinelaMQ = document.querySelector("#sentinela");
+    const sentinelaMQ = document.querySelector("#sentinela-mq");
+    const sentinela = document.querySelector("#sentinela");
     const menu = document.querySelector(".menu");
 
     const observer = new IntersectionObserver(
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(sentinelaMQ);
 });
 
-
+// Menu Hambúrguer 
 document.addEventListener("DOMContentLoaded", function() {
     const hamburguer = document.querySelector(".hamburguer");
     const menu = document.querySelector(".menu");
