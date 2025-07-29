@@ -730,14 +730,14 @@ footer{
     }
 
     /* SOBRE NÓS */
+    #sobre-nos {
+        scroll-margin-top: 45px; 
+    }
+
     .sobre-nos-img{
         margin-top: 30px;
         max-width: 100%;
         height: 150px;
-    }
-
-    #sobre-nos {
-        scroll-margin-top: 70px; 
     }
     .sobre-nos{
         margin-top: 50px;
