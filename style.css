@@ -165,9 +165,10 @@ main{
     scroll-margin-top: 130px; 
 }
 
-.vantagens-content h1{
+.vantagens-content h2{
     font-family: var(--header-font);
     padding: 4vh;
+    font-size: 2em;
 }
 
 .vantagens-grid {
@@ -220,7 +221,9 @@ main{
 }
 
 .vantagens-item h2{
+    padding: 0;
     margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 .vantagens-item p{
@@ -244,9 +247,10 @@ main{
     background-color: var(--light-gray-bg);
 }
 
-.produtos h1{
+.produtos h2{
     font-family: var(--header-font);
     padding: 4vh;
+    font-size: 2em;
 }
 
 .swiper{
@@ -313,7 +317,7 @@ main{
     background: var(--cyan-blue-bg);
 }
 
-.mercado-livre-content h1{
+.mercado-livre-content h2{
     color: white;
     font-family: var(--header-font);
     font-size: 1.7em;
@@ -321,7 +325,7 @@ main{
     padding-bottom: 1vh;
 }
 
-.mercado-livre-content h2{
+.mercado-livre-content h3{
     font-family: var(--main-font);
     font-size: 1.2em;
     max-width: 50%;
@@ -389,9 +393,10 @@ main{
     padding-bottom: 0;
 }
 
-.sobre-nos h1{
+.sobre-nos h2{
     font-family: var(--main-font);
     margin-bottom: 30px;
+    font-size: 2em;
 }
 
 .sobre-nos p {
@@ -443,11 +448,12 @@ main{
     border: none;
 }
 
-.fale-conosco h1{
+.fale-conosco h2{
     margin-top: 10px;
+    font-size: 2em;
 }
 
-.fale-conosco h2{
+.fale-conosco h3{
     color: var(--dark-color-font); 
     font-size: 1em;
 }
@@ -624,12 +630,12 @@ footer{
         box-shadow: var(--box-shadow-forte);
     }
 
-    .mercado-livre-content h1{
+    .mercado-livre-content h2{
         padding-top: 5vh;
         padding-bottom: 2vh;
     }
 
-    .mercado-livre-content h2{
+    .mercado-livre-content h3{
         font-family: var(--main-font);
         font-size: 1.2em;
         max-width: 70%;
@@ -719,11 +725,11 @@ footer{
     .swiper-slide img {
         height: 20vh;
     }
-    .mercado-livre-content h1{
+    .mercado-livre-content h2{
         max-width: 100%;
         font-size: 1.4em;
     }
-    .mercado-livre-content h2{
+    .mercado-livre-content h3{
         max-width: 90%;
         font-size: 1.1em;
 
@@ -748,13 +754,13 @@ footer{
     }
 
     /* FALE CONOSCO */
-    .fale-conosco h1{
+    .fale-conosco h2{
         font-size: 1.5em;
     }
     .fale-item p{
         font-size: 1em;
     }
-    .fale-item h2{
+    .fale-item h3{
         font-size: 1em;
     }
     .fale-grid{
