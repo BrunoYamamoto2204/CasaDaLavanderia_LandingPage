@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loop: true,
         spaceBetween: 50,
         autoplay: {
-            delay: 3000,
+            delay: 4500,
         },
         navigation: {
             nextEl: '.swiper-button-next',
@@ -27,25 +27,23 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const elementos = document.querySelectorAll(".escondido")
 
-    const observer = new IntersectionObserver(
-        entries => {
-            entries.forEach(entry =>{
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("animacao");
-                    entry.target.classList.remove("escondido");
-                }
-                else{
-                    entry.target.classList.remove("animacao");
-                    entry.target.classList.add("escondido");
-                }
-            })
-        },
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry =>{
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animacao");
+                entry.target.classList.remove("escondido");
+            }
+            else{
+                entry.target.classList.remove("animacao");
+                entry.target.classList.add("escondido");
+            }
+        })
+    },
 
-        {
-            root: null,
-            threshold: 0,
-        }
-    );
+    {
+        root: null,
+        threshold: 0,
+    });
 
     elementos.forEach(el => observer.observe(el));
 })
@@ -58,30 +56,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const sentinela = document.querySelector("#sentinela");
     const menu = document.querySelector(".menu");
 
-    const observer = new IntersectionObserver(
-        entries => {
-            const entry = entries[0];
+    const observer = new IntersectionObserver(entries => {
+        const entry = entries[0];
 
-            if (entry.isIntersecting) {
-                header.classList.add("header-static");
-                menu.classList.add("header-static");
+        if (entry.isIntersecting) {
+            header.classList.add("header-static");
+            menu.classList.add("header-static");
 
-                // Espera a animação para sumir o menu
-                menu.addEventListener("transitionend", function onTransitionEnd() {
-                    menu.classList.add("menu-none");
-                    menu.removeEventListener("transitionend", onTransitionEnd); 
-                });
-            } 
-            else {
-                header.classList.remove("header-static");
-                menu.classList.remove("header-static");
-            }
-        },
-        {
-            root: null,
-            threshold: 0,
+            // Espera a animação para sumir o menu
+            menu.addEventListener("transitionend", function onTransitionEnd() {
+                menu.classList.add("menu-none");
+                menu.removeEventListener("transitionend", onTransitionEnd); 
+            });
+        } 
+        else {
+            header.classList.remove("header-static");
+            menu.classList.remove("header-static");
         }
-    );
+    },
+    {
+        root: null,
+        threshold: 0,
+    });
+
     observer.observe(sentinela);
     observer.observe(sentinelaMQ);
 });
