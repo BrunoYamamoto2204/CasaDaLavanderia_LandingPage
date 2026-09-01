@@ -1,28 +1,3 @@
-// Funcionalidades do carrossel
-document.addEventListener("DOMContentLoaded", function() {
-    const swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
-        loop: true,
-        spaceBetween: 50,
-        autoplay: {
-            delay: 4500,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        // Quantidade de imagens de acordo com o tamanho
-        breakpoints: {
-            0:{
-                slidesPerView: 1
-            },
-            769:{
-                slidesPerView: 3
-            }
-        }
-    });
-})
-
 // Animação das seções 
 document.addEventListener("DOMContentLoaded", function() {
     const elementos = document.querySelectorAll(".escondido")

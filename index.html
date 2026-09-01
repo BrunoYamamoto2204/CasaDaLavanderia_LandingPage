@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa da Lavanderia | Revestimentos e Produtos de Limpeza</title>
-    <link rel="shortcut icon" href="img-icones/icone.png" type="image/x-icon">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18399588862"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18399588862');
+    </script>
+
+    <title>Casa da Lavanderia</title>
+
+    <link rel="shortcut icon" href="img-icones/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
     <!-- Meta Tags -->
@@ -25,13 +37,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Inter:wght@300;400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Bungee+Spice&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
         {
@@ -62,7 +74,7 @@
     <header>
         <div id="inicio" class="header-container">
             <div class="logo">
-                <img src="img-icones/LogoHeaderr.png" alt="Logo do Cabeçalho">
+                <img src="img-icones/Logo.png" alt="Logo do Cabeçalho">
             </div>
             <div class="header-content">
                 <nav>
@@ -73,7 +85,7 @@
                         <li><a href="#">Início</a></li>
                         <li><a href="#vantagens">Vantagens</a></li>
                         <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="#sobre-nos">Sobre</a></li> 
+                        <li><a href="#sobre-nos">Sobre</a></li>
                         <li><a href="#fale-conosco">Fale Conosco</a></li>
                     </ul>
                 </nav>
@@ -82,197 +94,177 @@
     </header>
 
     <main>
-        <div class="logo-intro">
-            <div class="intro-titulos escondido">
-                <h1>Soluções para sua Lavanderia</h1>
-                <h2>Revestimentos e Limpeza</h2>
-                <p>Produtos Especializados para Revestimentos de Calandras Industriais <br class="mq"> e 
-                    Limpeza de Manchas em Tecidos
-                </p>
+        <section class="logo-intro">
+            <div class="intro-inner">
+                <div class="intro-titulos escondido">
+                    <h1>Soluções para sua Lavanderia</h1>
+                    <h2>Revestimentos para Calandra</h2>
+                    <p>Materiais de Alta Qualidade para Diferentes Necessidades <br class="mq"> e
+                        Modelos de Calandras Industriais
+                    </p>
+                </div>
             </div>
-            <div class="imagem escondido">
-                <img src="img-pagina/img-inicial.png" alt="Logo da Casa da Lavanderia">
-            </div>
-        </div>
+        </section>
 
-        <div id="vantagens" class="vantagens-content escondido">
-            <h2>Nossos Diferenciais</h2>
-            <div class="vantagens-grid">
-                <div class="vantagens-item">
-                    <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
-                    <h2>Aumento de Vida Útil dos Equipamentos</h2>
-                    <p>
-                        Materiais resistentes e de alta durabilidade, reduzindo o desgaste das calandras e outros 
-                        equipamentos. 
-                    </p>
-                </div>
-                <div class="vantagens-item">
-                    <i class="fa-solid fa-hand-sparkles" aria-hidden="true"></i>
-                    <h2>Limpeza Profissional</h2>
-                    <p>
-                        Oferecemos soluções de limpeza de alta performance que eliminam 
-                        até as sujeiras mais difíceis, promovendo um acabamento impecável 
-                        em suas peças de tecido.
-                    </p>
-                </div>
-                <div class="vantagens-item">
-                    <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
-                    <h2>Entrega Rápida</h2>
-                    <p>
-                        Envios são realizados em até 24h após a compra, com suporte dedicado 
-                        para tirar dúvidas e auxiliar na melhor escolha dos produtos para a sua necessidade.
-                    </p>
+        <section id="vantagens" class="vantagens-content escondido">
+            <div class="vantagens-inner">
+                <h2>Nossos Diferenciais</h2>
+                <div class="vantagens-grid">
+                    <div class="vantagens-item">
+                        <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
+                        <h2>Aumento de Vida Útil dos Equipamentos</h2>
+                        <p>
+                            Materiais resistentes e de alta durabilidade, reduzindo o desgaste das calandras e outros
+                            equipamentos.
+                        </p>
+                    </div>
+                    <div class="vantagens-item">
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        <h2>Alta Durabilidade</h2>
+                        <p>
+                            Revestimentos desenvolvidos para oferecer resistência e maior vida útil durante o uso em calandras industriais.
+                        </p>
+                    </div>
+                    <div class="vantagens-item">
+                        <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+                        <h2>Entrega Rápida</h2>
+                        <p>
+                            Envios são realizados em até 24h após a compra, com suporte dedicado
+                            para tirar dúvidas e auxiliar na melhor escolha dos produtos para a sua necessidade.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="produtos" class="produtos">
-            <h2>Produtos</h2>
-            <div class="carrossel">
-                <!-- Imagens + Botões  -->
-                <div class="swiper mySwiper">
-                    <!-- Imagens -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="item-content escondido">
-                                <a target="_blank" href="https://www.mercadolivre.com.br/revestimento-tecido-lona-algodao-cru-calandra-lavand-200m/up/MLBU3215911960?pdp_filters=seller_id%3A1202323120#polycard_client=search-nordic&search_layout=grid&position=28&type=product&tracking_id=95496556-3b73-480c-bd96-34cacca3438f&wid=MLB4081934507&sid=search" rel="noopener">
-                                    <img src="img-produtos/img1.png" alt="Lona Algodão Cru"/>
-                                </a>
-                                <div class="info">
-                                    <h3>Lona Algodão Cru</h3>
-                                    <p>Revestimento para Calandra</p>
-                                </div>
+        <section id="produtos" class="produtos">
+            <div class="produtos-inner">
+                <h2>Produtos</h2>
+
+                <div class="produtos-grid">
+                    <div class="item-content destaque escondido">
+                        <a target="_blank"
+                            href="https://www.mercadolivre.com.br/revestimento-tecido-lona-algodao-cru-calandra-lavand-160m/up/MLBU4714930899?pdp_filters=seller_id%3A3604181233#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=28&type=product&tracking_id=3e9f05c7-87a9-4948-9e78-0d457098e5b6&wid=MLB5064691441&sid=search"
+                            rel="noopener"
+                            onclick="gtag('event', 'conversion', {'send_to': 'AW-18399588862/2kpmCJXV0-UcEP7jzcVE'});"
+                         >
+                            <img src="img-produtos/img1.png" alt="Lona Algodão Cru"/>
+                            <div class="info">
+                                <h3>Lona Algodão Cru</h3>
+                                <p>Revestimento para Calandra</p>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content escondido">
-                                <a target="_blank" href="https://www.mercadolivre.com.br/bidim-feltro-calandra-lavanderia-200m-revestimento-tecido/up/MLBU3210336433?pdp_filters=seller_id%3A1202323120#polycard_client=search-nordic&search_layout=grid&position=38&type=product&tracking_id=58eeb646-9a3b-47fc-9917-147379108614&wid=MLB5412968738&sid=search" rel="noopener">
-                                    <img src="img-produtos/img2.png" alt="Bidim RT31"/>
-                                </a>
-                                <div class="info">
-                                    <h3>Bidim RT31</h3>
-                                    <p>Revestimento para Calandra</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content escondido">
-                                <a target="_blank" href="https://www.mercadolivre.com.br/revestimento-tecido-manta-poliester-calandra-lavander-200m/up/MLBU3324260032?pdp_filters=seller_id%3A1202323120#polycard_client=search-nordic&search_layout=grid&position=5&type=product&tracking_id=68f30ec2-a181-4117-b5e1-c6da10b7cb26&wid=MLB4084641857&sid=search" rel="noopener">
-                                    <img src="img-produtos/img6.png" alt="Manta Poliéster"/>
-                                </a>
-                                <div class="info">
-                                    <h3>Manta Poliéster</h3>
-                                    <p>Revestimento para Calandra</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content escondido">
-                                <a target="_blank" href="https://www.mercadolivre.com.br/feltro-geoflex-600-calandra-lavanderia-200m-revestimento/up/MLBU3210358223?pdp_filters=seller_id%3A1202323120#polycard_client=search-nordic&search_layout=grid&position=23&type=product&tracking_id=0d088e7b-eada-412f-9a9a-ae276bcb0239&wid=MLB4082040567&sid=search" rel="noopener">
-                                    <img src="img-produtos/img3.png" alt="Feltro Geoflex 600"/>
-                                </a>
-                                <div class="info">
-                                    <h3>Feltro Geoflex 600</h3>
-                                    <p>Revestimento para Calandra</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content escondido">
-                                <a target="_blank" href="https://www.mercadolivre.com.br/kit-3-un-tira-gordura-tecidos-roupas-lavanderia-200ml/up/MLBU3377619640?pdp_filters=item_id%3AMLB4169774349#origin%3Dshare%26sid%3Dshare%26wid%3DMLB4169774349" rel="noopener">
-                                    <img src="img-produtos/img4.png" alt="Desengordurante para Tecidos"/>
-                                </a>
-                                <div class="info">
-                                    <h3>Desengordurante para Tecidos</h3>
-                                    <p>Limpeza de Tecidos</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content escondido">
-                                <a target="_blank" href="https://www.mercadolivre.com.br/kit-3-un-tira-ferrugem-tecidos-roupas-lavanderia-200ml/up/MLBU3371328659?pdp_filters=seller_id%3A1202323120#polycard_client=search-nordic&search_layout=grid&position=32&type=product&tracking_id=66730fb7-68a0-430e-9b50-efd06c3945b6&wid=MLB4169743179&sid=search" rel="noopener">
-                                    <img src="img-produtos/img5.png" alt="Tira Ferrugem"/>
-                                </a>
-                                <div class="info">
-                                    <h3>Tira Ferrugem</h3>
-                                    <p>Limpeza de Tecidos</p>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="swiper-button-next">
-                        <i class="fa-solid fa-circle-arrow-right" aria-hidden="true"></i>
+                    <div class="item-content escondido">
+                        <a target="_blank"
+                            href="https://www.mercadolivre.com.br/bidim-feltro-calandra-lavanderia-160m-revestimento-tecido/up/MLBU4788257961?pdp_filters=seller_id%3A3604181233#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=40&type=product&tracking_id=930cd664-497d-48a2-8002-5341680e31d7&wid=MLB7448486196&sid=search"
+                            rel="noopener"
+                            onclick="gtag('event', 'conversion', {'send_to': 'AW-18399588862/2kpmCJXV0-UcEP7jzcVE'});"
+                        >
+                            <img src="img-produtos/img2.png" alt="Bidim RT31"/>
+                            <div class="info">
+                                <h3>Bidim Feltro</h3>
+                                <p>Revestimento para Calandra</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="swiper-button-prev">
-                        <i class="fa-solid fa-circle-arrow-left" aria-hidden="true"></i>
+
+                    <div class="item-content escondido">
+                        <a target="_blank"
+                            href="https://www.mercadolivre.com.br/revestimento-tecido-manta-poliester-calandra-lavander-160m/up/MLBU4791531484?pdp_filters=seller_id%3A3604181233#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=29&type=product&tracking_id=a53800ec-7103-4d97-bb27-265f1154a663&wid=MLB5081882159&sid=search"
+                            rel="noopener"
+                            onclick="gtag('event', 'conversion', {'send_to': 'AW-18399588862/2kpmCJXV0-UcEP7jzcVE'});"
+                        >
+                            <img src="img-produtos/img6.png" alt="Manta Poliéster"/>
+                            <div class="info">
+                                <h3>Manta Poliéster</h3>
+                                <p>Revestimento para Calandra</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item-content escondido">
+                        <a target="_blank"
+                            href="https://www.mercadolivre.com.br/lonita-calandra-lavanderia-160m-100-algodao-revestimento/up/MLBU4782257979?pdp_filters=seller_id%3A3604181233#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=11&type=product&tracking_id=befb821d-5c74-4189-bc56-0d9df8c6844e&wid=MLB7447370008&sid=search"
+                            rel="noopener"
+                            onclick="gtag('event', 'conversion', {'send_to': 'AW-18399588862/2kpmCJXV0-UcEP7jzcVE'});"
+                        >
+                            <img src="img-produtos/img8.png" alt="Lonita 100% Algodão"/>
+                            <div class="info">
+                                <h3>Lonita 100% Algodão</h3>
+                                <p>Revestimento para Calandra</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="mercado-livre-content">
-                <h2>Pronto para Transformar sua Lavanderia?</h2>
-                <h3>Confira nossa linha completa de produtos no <span>Mercado Livre</span> e aproveite uma experiência de compra rápida, segura e confiável</h3>
-                <a target="_blank" href="https://lista.mercadolivre.com.br/_OrderId_PRICE_CustId_1202323120_NoIndex_True?item_id=MLB4081934595&category_id=MLB439096&seller_id=1202323120&client=recoview-selleritems&recos_listing=true" rel="noopener">
-                    Comprar agora
-                </a>
-            </div>
-            <div class="espaco-azul"> </div>
-
-        </div>
-
-        <div id="sobre-nos" class="sobre-nos escondido">
-            <div class="sobre-nos-descriptiona">
-                <h2>Quem Somos</h2>
-                <p>
-                    A Casa da Lavanderia é uma empresa especializada na produção de insumos para lavanderias, com forte atuação no segmento de revestimentos para calandras. 
-                    Oferecemos revestimentos em diversos materiais e tamanhos, além de produtos de limpeza que proporcionam máxima eficiência no cuidado com os tecidos.
-                    <br><br><span id="sentinela-mq"></span>
-                    Acreditamos no poder do empreendedorismo e estamos em constante busca por inovação. Nosso compromisso é desenvolver soluções que atendam às necessidades reais dos nossos clientes, sempre com empatia, excelência e foco na qualidade.
-                    <br><br>
-                    Trabalhamos com responsabilidade e buscamos crescer de forma sustentável, entregando valor por meio de produtos confiáveis e eficientes. 
-                    Acesse nossa loja no Mercado Livre e conheça todas as nossas soluções!
-                </p>
-            </div>
-            
-            <div id="sentinela"></div>
-
-            <div class="sobre-nos-img">
-                <img src="img-pagina/maquina1.png" alt="Imagem máquina de lavar">
-            </div>
-        </div>
-
-        <div id="fale-conosco" class="fale-conosco escondido">
-            <h2 class="escondido">Fale Conosco</h2>
-            <h3 class="escondido">Ficou com alguma dúvida? Fale com a gente!</h3>
-            <hr class="linha escondido">
-            <div class="fale-grid escondido">
-                <div class="fale-item email">
-                    <h2><i class="fa-solid fa-envelope" aria-hidden="true"></i> E-mail</h2>
-                    <p>acasadalavenderia@gmail.com</p>
-                </div>
-                <div class="fale-item contato">
-                    <h2><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Contato</h2>
-                    <p>(63) 9 9282-6287</p>
-                </div>
-                <div class="fale-item local">
-                    <h2><i class="fa-solid fa-house" aria-hidden="true"></i> Local</h2>
-                    <p>Curitiba - PR</p>
+                <div class="ml-inner">
+                    <h2>Pronto para Transformar sua Lavanderia?</h2>
+                    <h3>Confira nossa linha completa de produtos no <span>Mercado Livre</span> e aproveite uma experiência de compra rápida, segura e confiável</h3>
+                    <a
+                        target="_blank"
+                        href="https://lista.mercadolivre.com.br/_CustId_3604181233"
+                        rel="noopener"
+                        onclick="gtag('event', 'conversion', {'send_to': 'AW-18399588862/2kpmCJXV0-UcEP7jzcVE'});"
+                    >
+                        Comprar agora
+                    </a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="sobre-nos" class="sobre-nos escondido">
+            <div class="sobre-nos-inner">
+                <div class="sobre-nos-descriptiona">
+                    <h2>Quem Somos</h2>
+                    <p>
+                        A Casa da Lavanderia é uma empresa especializada na produção de insumos para lavanderias, com forte atuação no segmento de revestimentos para calandras.
+                        Oferecemos revestimentos em diversos materiais e tamanhos.
+                        <br><br><span id="sentinela-mq"></span>
+                        Acreditamos no poder do empreendedorismo e estamos em constante busca por inovação. Nosso compromisso é desenvolver soluções que atendam às necessidades reais dos nossos clientes, sempre com empatia, excelência e foco na qualidade.
+                        <br><br>
+                        Trabalhamos com responsabilidade e buscamos crescer de forma sustentável, entregando valor por meio de produtos confiáveis e eficientes.
+                        Acesse nossa loja no Mercado Livre e conheça todas as nossas soluções!
+                    </p>
+                </div>
+
+                <div id="sentinela"></div>
+
+                <div class="sobre-nos-img">
+                    <!-- <img src="img-pagina/maquina1.png" alt="Imagem máquina de lavar"> -->
+                    <img src="img-pagina/local.jpg" alt="Imagem do local">
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="fale-conosco escondido">
+            <div class="fale-inner">
+                <h2 class="escondido">Fale Conosco</h2>
+                <h3 class="escondido">Ficou com alguma dúvida? Fale com a gente!</h3>
+                <hr class="linha escondido">
+                <div class="fale-grid escondido">
+                    <div class="fale-item email">
+                        <h2><i class="fa-solid fa-envelope" aria-hidden="true"></i> E-mail</h2>
+                        <p>acasadalavenderia10@gmail.com</p>
+                    </div>
+                    <div class="fale-item local">
+                        <h2><i class="fa-solid fa-house" aria-hidden="true"></i> Local</h2>
+                        <p>Curitiba - PR</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="escondido">
+    <footer>
         <p>Copyright © 2026 CASADALAVANDERIA | Todos os direitos reservados.</p>
-        <!-- <div class="github-container">
-            <span class="github">GitHub:</span>
-            <a target="_blank" href="https://github.com/BrunoYamamoto2204" rel="noopener" class="github-link">BrunoYamamoto2204</a> -->
-        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
 
