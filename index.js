@@ -72,3 +72,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 })
+
+document.addEventListener('click', function(e) {
+    const hamburguer = document.querySelector(".hamburguer")
+    const menu = document.querySelector(".menu")
+
+    const cliqueForaDoMenu = !menu.contains(e.target);
+    const cliqueForaDoBotao = !hamburguer.contains(e.target);
+    const menuEstaAberto = !menu.classList.contains('menu-none');
+
+    if (menuEstaAberto && cliqueForaDoMenu && cliqueForaDoBotao) {
+        menu.classList.add('menu-none');
+        hamburguer.setAttribute('aria-expanded', 'false');
+    }
+});

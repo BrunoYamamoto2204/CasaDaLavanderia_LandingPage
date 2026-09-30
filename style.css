@@ -23,7 +23,10 @@
     --light-gray-bg: rgba(128, 128, 128, 0.05);
 
     --container: 1200px;
-    --header-h: clamp(2rem, 5rem, 6rem)
+    --header-h: clamp(2rem, 6rem, 7rem);
+    --header-a: clamp(0.5rem, 0.88rem, 1rem);
+
+    --pd-x-page: clamp(64px, 32px, 20px);
 }
 
 * {
@@ -112,6 +115,7 @@ header {
 
 .header-container {
     width: 100%;
+    position: relative;
     max-width: var(--container);
     height: var(--header-h);
     margin: auto;
@@ -124,7 +128,7 @@ header {
 }
 
 .logo img {
-    height: 5rem;
+    height: 6rem;
     width: auto;
     object-fit: contain;
 }
@@ -133,6 +137,7 @@ header {
     display: flex;
     align-items: center;
     gap: 28px;
+    border-radius: 0.5rem;
 }
 
 .menu li {
@@ -145,7 +150,9 @@ header {
     text-decoration: none;
     color: var(--paper);
     font-family: var(--body-font);
-    font-size: 0.78rem;
+    /* font-size: 0.78rem; */
+    font-size: var(--header-a);
+    /* font-size: 0.78rem; */
     font-weight: 500;
     letter-spacing: 0.06em;
     padding-bottom: 4px;
@@ -184,9 +191,10 @@ header {
 /* ------------------------------------ INTRO ------------------------------------ */
 
 .logo-intro {
-    /* background: var(--paper); */
-    /* background: linear-gradient(120deg, var(--paper), var(--shell)); */
     background-image: url('img-pagina/calandra.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-bottom: 1px solid var(--line);
     height: 80vh;
 }
@@ -265,12 +273,13 @@ header {
 .vantagens-content {
     background: var(--shell);
     border-bottom: 1px solid var(--line);
+    height: 100%;
 }
 
 .vantagens-inner {
     max-width: var(--container);
+    padding: 104px var(--pd-x-page);
     margin: auto;
-    padding: 104px 32px;
 
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
@@ -340,8 +349,8 @@ header {
 
 .produtos-inner {
     max-width: var(--container);
+    padding: 104px var(--pd-x-page);
     margin: auto;
-    padding: 104px 32px;
 }
 
 .produtos-inner > h2 {
@@ -506,7 +515,7 @@ header {
 .sobre-nos-inner {
     max-width: var(--container);
     margin: auto;
-    padding: 104px 32px;
+    padding: 104px var(--pd-x-page);
 }
 
 .sobre-nos-descriptiona {
@@ -565,7 +574,7 @@ header {
 .fale-inner {
     max-width: var(--container);
     margin: auto;
-    padding: 96px 32px;
+    padding: 96px var(--pd-x-page);
 }
 
 .fale-conosco > .fale-inner > h2 {
@@ -649,7 +658,7 @@ footer p {
 
 /* ------------------------------------ MEDIA QUERY ------------------------------------ */
 
-@media (max-width: 1200px) {
+@media (max-width: 1050px) {
     .intro-inner,
     .vantagens-inner,
     .sobre-nos-descriptiona {
@@ -670,8 +679,21 @@ footer p {
         text-wrap: pretty;
     }
 
-    .vantagens-content > .vantagens-inner > h2 {
-        position: static;
+    .vantagens{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .vantagens-content{
+        display: flex;
+        width: 100vw;
+    }
+
+    .vantagens-inner {
+        gap: 5rem;
+        margin: 0;
+        height: 100%;
     }
 
     .produtos-grid {
@@ -691,6 +713,14 @@ footer p {
     .item-content.destaque .info {
         max-width: none;
         right: 20px;
+    }
+
+    .ml-inner {
+        padding: 104px 0px;
+    }
+
+    .mercado-livre-content {
+        padding: 0px var(--pd-x-page);
     }
 }
 
@@ -738,6 +768,10 @@ footer p {
         background-repeat: no-repeat;
     }
 
+    .intro-titulos h1 { 
+        width: 100%;
+    }
+
     .header-container,
     .intro-inner,
     .vantagens-inner,
@@ -781,10 +815,21 @@ footer p {
 @media (max-width: 500px) {
     .intro-titulos h1 {
         font-size: 2.5rem;
+        width: 100%;
     }
 
     .imagem img {
         height: 240px;
+    }
+
+    .mercado-livre-content {
+        padding: 0.5rem;
+    }
+
+    .mercado-livre-content > .ml-inner > h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.2;
     }
 
     .fale-grid {
